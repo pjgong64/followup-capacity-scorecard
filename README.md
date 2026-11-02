@@ -4,7 +4,7 @@ Analysis code for a study of credit follow-up under a fixed field-staff capacity
 1,496,721 Thai rice-cultivating borrowers of the Bank for Agriculture and Agricultural Cooperatives (BAAC),
 4,490,163 borrower-years (2020–2022), with the 2022 season withheld from every fitted or selected quantity.
 
-**Paper:** Jungsatidkul, P.; Innate, S. *Whom to Visit When Officers Are Few: Follow-Up Capacity, Exposure and the
+**Paper:** Jungsatidkul, P.; Innet, S. *Whom to Visit When Officers Are Few: Follow-Up Capacity, Exposure and the
 Price of Transparency in Agricultural Credit.* Manuscript in preparation, 2026.
 
 **Companion code (Study 1, the forecasters this study builds on):**
