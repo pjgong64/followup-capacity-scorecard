@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Whom to visit when officers are few: analysis code"
+authors:
+  - family-names: Jungsatidkul
+    given-names: Phataraphol
+    affiliation: "University of the Thai Chamber of Commerce; Bank for Agriculture and Agricultural Cooperatives"
+  - family-names: Innate
+    given-names: Supachate
+    affiliation: "University of the Thai Chamber of Commerce"
+version: 1.0.0
+date-released: 2026-11-02
+license: MIT
+repository-code: "https://github.com/pjgong64/followup-capacity-scorecard"
+keywords: [credit scoring, agricultural finance, capacity constraint, scorecard, population stability index]
+references:
+  - type: software
+    title: "stcraan-forecasting"
+    doi: 10.5281/zenodo.22842038
+  - type: article
+    title: "Silent modality collapse and the measurement of fusion gains"
+    doi: 10.3390/forecast8060100

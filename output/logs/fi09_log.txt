@@ -1,0 +1,42 @@
+fi_09_psi  2026-10-26 21:18:28
+
+== score PSI (ten bins at the deciles of the earlier year) ==
+   2020 -> 2021  PSI 0.0176 (stable)  mean score 600.6 -> 595.8  | check only: default rate 4.35% -> 7.05%
+   2021 -> 2022  PSI 0.0022 (stable)  mean score 595.8 -> 594.5  | check only: default rate 7.05% -> 12.06%
+   2020 -> 2022  PSI 0.0288 (stable)  mean score 600.6 -> 594.5  | check only: default rate 4.35% -> 12.06%
+   (2020 and 2021 are the card's own development years; 2022 is out of sample)
+
+== characteristic stability (CSI) and mean points contributed ==
+   Area_default_hist    (sub-district default history: rebuilt each year from earlier outcomes; shown via reasons)
+  NOTE: in 2020 no borrower has a previous year in the panel, so Previous_Default and
+  Has_Credit_History jump by construction from 2020 to 2021. 2021 -> 2022 is the real test.
+  2020->2021
+     Previous_Default     CSI 29.6450 (act)  mean points 56.0 -> 54.0 (-2.0)
+     eCostrai             CSI 8.7357 (act)  mean points 53.6 -> 50.3 (-3.3)
+     Outb                 CSI 0.1370 (watch)  mean points 52.6 -> 52.2 (-0.4)
+     MP                   CSI 0.1235 (watch)  mean points 51.6 -> 51.6 (+0.1)
+     CD                   CSI 0.0584 (stable)  mean points 51.8 -> 51.8 (+0.0)
+     Int                  CSI 0.0552 (stable)  mean points 67.2 -> 66.6 (-0.6)
+     eInc                 CSI 0.0363 (stable)  mean points 52.1 -> 51.7 (-0.4)
+     Depb                 CSI 0.0102 (stable)  mean points 56.5 -> 58.1 (+1.7)
+     nP                   CSI 0.0005 (stable)  mean points 51.7 -> 51.7 (+0.1)
+     nLC                  CSI 0.0003 (stable)  mean points 53.2 -> 53.1 (-0.1)
+  2021->2022
+     eCostrai             CSI 8.9311 (act)  mean points 50.3 -> 49.3 (-1.0)
+     Previous_Default     CSI 0.3491 (act)  mean points 54.0 -> 53.3 (-0.8)
+     eInc                 CSI 0.1493 (watch)  mean points 51.7 -> 52.6 (+0.8)
+     CD                   CSI 0.0379 (stable)  mean points 51.8 -> 51.7 (-0.1)
+     MP                   CSI 0.0182 (stable)  mean points 51.6 -> 51.6 (-0.0)
+     Outb                 CSI 0.0049 (stable)  mean points 52.2 -> 52.0 (-0.2)
+     Depb                 CSI 0.0046 (stable)  mean points 58.1 -> 57.5 (-0.6)
+     nLC                  CSI 0.0043 (stable)  mean points 53.1 -> 53.1 (+0.1)
+     Int                  CSI 0.0010 (stable)  mean points 66.6 -> 67.1 (+0.5)
+     nP                   CSI 0.0004 (stable)  mean points 51.7 -> 51.8 (+0.1)
+
+== first reason code among the 19% lowest scores, by year ==
+   Area_default_hist    y2020   4.4%  y2021   3.0%  y2022   2.1%
+   Depb                 y2020  68.1%  y2021  44.3%  y2022  38.9%
+   Int                  y2020  27.4%  y2021  44.7%  y2022  40.2%
+   Previous_Default     y2020   0.0%  y2021   8.0%  y2022  18.9%
+
+done. Paste fi_out/fi09_log.txt into the chat.

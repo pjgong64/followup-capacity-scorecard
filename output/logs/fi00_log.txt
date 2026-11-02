@@ -1,0 +1,64 @@
+fi_00_inventory  2026-10-19 21:13:48
+working directory: <data folder>
+
+== A. score vectors ==
+main     XGB__F_SP  n=1,496,721  defaults=180,556 (12.063%)  AUC=0.907657  expected=0.907657  diff=-1.1e-16  OK
+main     LR__F_SP   n=1,496,721  defaults=180,556 (12.063%)  AUC=0.894327  expected=0.894327  diff=-2.2e-16  OK
+rolling  XGB__F_SP  n=1,496,721  defaults=105,445 (7.045%)  AUC=0.897958  expected=0.897958  diff=+0.0e+00  OK
+rolling  LR__F_SP   n=1,496,721  defaults=105,445 (7.045%)  AUC=0.892829  expected=0.892829  diff=+1.1e-16  OK
+
+== B. joining the raw money columns ==
+raw file: 4,490,163 rows
+(ID, Year) is unique in the raw file: OK
+main     (2022) rows=1,496,721  unmatched=0  outcome mismatch=0  ADM3 mismatch=0
+rolling  (2021) rows=1,496,721  unmatched=0  outcome mismatch=0  ADM3 mismatch=0
+alignment: OK for both runs
+
+== C. exposure by year and outcome (THB) ==
+2020 Y=0 n=1,431,672  total Out=426.27 bn  mean=297,740  median=216,400  p99=1,016,776  Out==0 2.24%  Out>=Outb 56.7%  Out>CL 0.00%
+2020 Y=1 n=65,049  total Out=25.65 bn  mean=394,293  median=346,822  p99=1,016,776  Out==0 0.95%  Out>=Outb 76.6%  Out>CL 0.00%
+2021 Y=0 n=1,391,276  total Out=426.16 bn  mean=306,309  median=222,118  p99=1,016,776  Out==0 3.58%  Out>=Outb 41.5%  Out>CL 0.00%
+2021 Y=1 n=105,445  total Out=39.43 bn  mean=373,974  median=322,810  p99=1,016,776  Out==0 0.67%  Out>=Outb 67.0%  Out>CL 0.00%
+2022 Y=0 n=1,316,165  total Out=409.78 bn  mean=311,347  median=224,381  p99=1,016,776  Out==0 11.08%  Out>=Outb 39.5%  Out>CL 0.00%
+2022 Y=1 n=180,556  total Out=61.53 bn  mean=340,772  median=274,723  p99=1,016,776  Out==0 3.33%  Out>=Outb 50.8%  Out>CL 0.00%
+2020  defaulters hold 25.65 bn of 451.91 bn (5.68% of exposure, 4.35% of borrowers)
+2021  defaulters hold 39.43 bn of 465.59 bn (8.47% of exposure, 7.05% of borrowers)
+2022  defaulters hold 61.53 bn of 471.31 bn (13.05% of exposure, 12.06% of borrowers)
+
+defaulters with Out == 0 (EAD would be zero):
+  2022  n=6,008  their mean Outb=151,704  Outb also zero=0.0%
+  2020  n=620  their mean Outb=293,455  Outb also zero=0.0%
+  2021  n=705  their mean Outb=327,596  Outb also zero=0.0%
+
+== D. contractual interest rate tiers ==
+2020  Int=0.0650  n=971,585 (64.9% of year)  default rate 1.18%
+2020  Int=0.0725  n=107,686 (7.2% of year)  default rate 2.29%
+2020  Int=0.0800  n=109,537 (7.3% of year)  default rate 4.78%
+2020  Int=0.0875  n=236,097 (15.8% of year)  default rate 4.83%
+2020  Int=0.0950  n=71,816 (4.8% of year)  default rate 48.03%
+2021  Int=0.0650  n=1,020,719 (68.2% of year)  default rate 1.83%
+2021  Int=0.0725  n=99,702 (6.7% of year)  default rate 5.52%
+2021  Int=0.0800  n=109,594 (7.3% of year)  default rate 7.28%
+2021  Int=0.0875  n=140,791 (9.4% of year)  default rate 13.86%
+2021  Int=0.0950  n=125,915 (8.4% of year)  default rate 42.67%
+2022  Int=0.0650  n=1,026,078 (68.6% of year)  default rate 4.86%
+2022  Int=0.0725  n=100,491 (6.7% of year)  default rate 13.06%
+2022  Int=0.0800  n=110,834 (7.4% of year)  default rate 17.04%
+2022  Int=0.0875  n=145,640 (9.7% of year)  default rate 26.55%
+2022  Int=0.0950  n=113,678 (7.6% of year)  default rate 52.81%
+
+tier movement between years:
+  2020->2021  n=1,496,721  same tier 77.1%  moved up to 9.5% 4.69%  (their default rate 32.8%)  share of last year's defaulters now at 9.5% 64.4%
+  2021->2022  n=1,496,721  same tier 98.6%  moved up to 9.5% 0.00%  (their default rate 16.9%)  share of last year's defaulters now at 9.5% 49.7%
+
+== E. proxy for the March-due (stored-rice) group: MH in {11,12} & IDRV == 1 ==
+2020  proxy=TRUE   n=600,066 (40.1% of year)  default rate 3.53%  previous default 0.0%
+2020  proxy=FALSE  n=896,655 (59.9% of year)  default rate 4.89%  previous default 0.0%
+2021  proxy=TRUE   n=620,011 (41.4% of year)  default rate 5.34%  previous default 3.6%
+2021  proxy=FALSE  n=876,710 (58.6% of year)  default rate 8.25%  previous default 4.9%
+2022  proxy=TRUE   n=615,447 (41.1% of year)  default rate 10.32%  previous default 4.4%
+2022  proxy=FALSE  n=881,274 (58.9% of year)  default rate 13.28%  previous default 6.0%
+share by MH (all years): 1:0.4%  2:0.4%  3:0.2%  4:0.1%  5:0.0%  6:0.0%  7:0.5%  8:3.9%  9:4.1%  10:7.4%  11:79.1%  12:4.0%
+share by IDRV (all years): 1:42.2%  2:5.2%  3:1.5%  4:17.6%  5:33.4%
+
+done. Paste the whole of fi_out/fi00_log.txt back into the chat.

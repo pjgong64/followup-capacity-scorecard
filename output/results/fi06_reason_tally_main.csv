@@ -1,0 +1,5 @@
+r1,N,share,label
+Int,114345,0.402090893746308,Customer grade (contract rate)
+Depb,110513,0.388615776296171,Deposits at start of year (THB)
+Previous_Default,53607,0.188507468984724,Previous-year repayment status
+Area_default_hist,5911,0.0207858609727966,Sub-district default history (earlier years)

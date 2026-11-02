@@ -1,0 +1,46 @@
+variable,description,recorded,status
+Int,Contractual interest rate (customer grade),1 May,in scorecard
+Previous_Default,Previous-year repayment status,1 May,in scorecard
+Has_Credit_History,Any repayment record,1 May,dropped: correlation
+Depb,Deposits at 1 January,1 Jan,in scorecard
+CLb,Credit limit at 1 January,1 Jan,dropped: correlation
+Outb,Outstanding principal at 1 January,1 Jan,in scorecard
+nLC,Active loan contracts,start of year,in scorecard
+nIS,Declared income sources,start of season,dropped: IV
+nP,Rice plots,start of season,in scorecard
+nRV,Rice varieties,start of season,dropped: IV
+AreaR,Area on land-rights document,start of season,dropped: IV
+Area,Planted rice area,start of season,dropped: correlation
+Area_Utilization_Rate,Area / AreaR,start of season,dropped: IV
+IDRV,Primary rice variety,start of season,dropped: correlation
+MP,Planting month,start of season,in scorecard
+MH,Harvest month,start of season,dropped: sign
+CD,Cultivation days,start of season,in scorecard
+eCostrai,Estimated cost per rai,start of season,in scorecard
+eCost,Estimated total cost,start of season,dropped: IV
+eYierai,Estimated yield per rai,start of season,dropped: correlation
+eYie,Estimated total yield,start of season,dropped: IV
+ePrcton,Estimated price per tonne,start of season,dropped: correlation
+eInc,Estimated rice income,start of season,in scorecard
+Profitability_Buffer,(eInc - eCost) / eInc,start of season,dropped: correlation
+TE_IDDT,"Target encoding, land-rights document class",development years,dropped: IV
+TE_ADM3,"Target encoding, cultivation sub-district",development years,spatial block; scorecard uses out-of-fold sub-district history
+TE_IDProv_rice,"Target encoding, cultivation province",development years,spatial block
+TE_ADM3RL,"Target encoding, sub-district x residence",development years,spatial block
+TE_IDProv_RL,"Target encoding, residential province",development years,spatial block
+Dep,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Out,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+CL,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Credit_Utilization_Rate,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Liquidity_Buffer,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Debt_to_Income,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Bes,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Proxy_DSR,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Repayment_Rate,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Debt_per_Rai,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Est_DSCR10,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Est_DSCR20,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Debt_Reduction,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Debt_Momentum,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Saving_Growth,year-end value or ratio built from one,31 Dec,excluded from ex-ante set
+Saving_Momentum,year-end value or ratio built from one,31 Dec,excluded from ex-ante set

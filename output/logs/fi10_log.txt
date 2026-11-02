@@ -1,0 +1,53 @@
+fi_10_deployment  2026-11-02 18:14:15
+scaling: offset 487.1229 factor 28.8539 (PDO 20.0)
+
+== A. gains table (bad rate 2021 | 2022) ==
+   [-Inf,500)   62.93% |  69.78%  cum 2022  34.3%
+   [500,520)    25.66% |  53.11%  cum 2022  47.5%
+   [520,540)    18.01% |  38.52%  cum 2022  56.4%
+   [540,560)    13.10% |  24.34%  cum 2022  67.6%
+   [560,580)     7.81% |  14.25%  cum 2022  81.0%
+   [580,600)     3.28% |   7.02%  cum 2022  91.4%
+   [600,620)     1.25% |   3.27%  cum 2022  97.3%
+   [620,640)     0.47% |   1.42%  cum 2022  99.3%
+   [640,660)     0.15% |   0.66%  cum 2022  99.9%
+   [660, Inf)    0.06% |   0.35%  cum 2022 100.0%
+
+== B. realised points-to-odds alignment ==
+   dev 2020-21 PDO 19.9  score at 50:1 599.0
+   2021        PDO 22.0  score at 50:1 605.2
+   2022        PDO 22.2  score at 50:1 632.8
+
+== C. label-free realignment: Delta = 20.9 points ==
+   2022 mean PD: card 7.34%  realigned 11.10%  realised 12.06% (check only)
+
+== D. strategy table (visit if score <= cutoff), set on 2021 ==
+   <= 50,000          K13 566  K19 580  K38 612
+   50,001-160,000     K13 566  K19 580  K38 612
+   160,001-300,000    K13 494  K19 518  K38 555
+   300,001-500,000    K13 516  K19 539  K38 571
+   500,001-1,000,000  K13 537  K19 556  K38 587
+   > 1,000,000        K13 563  K19 580  K38 610
+   evaluation:
+   K 13 2021 bank grade      share 0.130 recall 0.613 small 0.573 EAR 16.58 bn
+   K 13 2021 strategy table  share 0.129 recall 0.669 small 0.764 EAR 14.07 bn
+   K 13 2022 bank grade      share 0.130 recall 0.487 small 0.548 EAR 37.51 bn
+   K 13 2022 strategy table  share 0.139 recall 0.579 small 0.718 EAR 27.84 bn
+   K 19 2021 bank grade      share 0.190 recall 0.729 small 0.846 EAR 14.17 bn
+   K 19 2021 strategy table  share 0.190 recall 0.765 small 0.880 EAR 10.41 bn
+   K 19 2022 bank grade      share 0.190 recall 0.592 small 0.737 EAR 32.54 bn
+   K 19 2022 strategy table  share 0.201 recall 0.691 small 0.827 EAR 20.97 bn
+   K 38 2021 bank grade      share 0.380 recall 0.868 small 0.933 EAR 5.24 bn
+   K 38 2021 strategy table  share 0.379 recall 0.886 small 0.973 EAR 4.51 bn
+   K 38 2022 bank grade      share 0.380 recall 0.829 small 0.888 EAR 10.76 bn
+   K 38 2022 strategy table  share 0.393 recall 0.842 small 0.946 EAR 9.89 bn
+
+== E. leading reason among 300,551 flagged borrowers (2022, K = 19 table) ==
+   Depb                  43.9%
+   Int                   36.9%
+   Previous_Default      16.7%
+   Area_default_hist      2.5%
+   nLC                    0.0%
+   median shortfall on reasons 1-3: 68 / 40 / 27 points
+
+done. Paste fi_out/fi10_log.txt into the chat.

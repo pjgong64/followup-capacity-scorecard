@@ -1,0 +1,13 @@
+fi_02_pd_correction  2026-10-19 23:34:42
+
+== exante_rolling ==  dev rows 1,496,721 (held out 224,507, default 4.3460%)  scored rows 1,496,721
+XGB__F_SP  stage-1 shift -3.0303 | mean raw 0.2725 -> stage 1 0.0599 -> EM prior 0.1008 (39 it) | realised 0.0705, PD ratio 1.431 | AUC 0.893298 -> 0.893298
+LR__F_SP   stage-1 shift -3.1253 | mean raw 0.2947 -> stage 1 0.0515 -> EM prior 0.0769 (51 it) | realised 0.0705, PD ratio 1.091 | AUC 0.886548 -> 0.886548
+
+== exante_main ==  dev rows 2,993,442 (held out 449,016, default 5.6956%)  scored rows 1,496,721
+XGB__F_SP  stage-1 shift -2.7567 | mean raw 0.2845 -> stage 1 0.0835 -> EM prior 0.1221 (32 it) | realised 0.1206, PD ratio 1.012 | AUC 0.897012 -> 0.897012
+LR__F_SP   stage-1 shift -2.8785 | mean raw 0.3096 -> stage 1 0.0924 -> EM prior 0.1380 (30 it) | realised 0.1206, PD ratio 1.144 | AUC 0.888483 -> 0.888483
+
+AUC must be unchanged by the correction (both stages are monotone).
+realised_rate_check and pd_ratio_check are reported, never used.
+done. Paste fi_out/fi02_log.txt into the chat.

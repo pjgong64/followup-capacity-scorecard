@@ -1,0 +1,220 @@
+fi_05_mixed_policy  2026-10-26 19:37:50
+money track = rule selected on 2021 by fi_03: LR__F_SP -> R2_EXP, XGB__F_SP -> R3_EL
+
+== exante_rolling: small loans = Outb <= 159,951 THB (598,689 borrowers, 33,147 defaulters holding 1.78 bn) ==
+
+== exante_main: small loans = Outb <= 161,374 THB (598,689 borrowers, 65,103 defaulters holding 3.25 bn) ==
+
+-- exante_rolling XGB__F_SP K=13%  (bank grade: recall 0.613, small-loan recall 0.573, EAR 16.58 bn)
+   V1_open    s=0.1  recall 0.608  capture 0.774  EAR 9.84 bn  small reached 11,421 (recall 0.345)  +EAR 0.64 bn  THB per extra small defaulter 88,971
+   V1_open    s=0.2  recall 0.636  capture 0.756  EAR 10.60 bn  small reached 15,821 (recall 0.477)  +EAR 1.40 bn  THB per extra small defaulter 120,905
+   V1_open    s=0.3  recall 0.655  capture 0.736  EAR 11.50 bn  small reached 19,108 (recall 0.576)  +EAR 2.29 bn  THB per extra small defaulter 154,290
+   V1_open    s=0.4  recall 0.664  capture 0.717  EAR 12.33 bn  small reached 20,857 (recall 0.629)  +EAR 3.12 bn  THB per extra small defaulter 188,185
+   V1_open    s=0.5  recall 0.669  capture 0.701  EAR 13.01 bn  small reached 21,732 (recall 0.656)  +EAR 3.80 bn  THB per extra small defaulter 218,038
+   V1_open    s=1.0  recall 0.673  capture 0.662  EAR 14.70 bn  small reached 22,511 (recall 0.679)  +EAR 5.49 bn  THB per extra small defaulter 301,363
+   V2_small   s=0.1  recall 0.608  capture 0.774  EAR 9.84 bn  small reached 11,421 (recall 0.345)  +EAR 0.64 bn  THB per extra small defaulter 88,971
+   V2_small   s=0.2  recall 0.637  capture 0.755  EAR 10.65 bn  small reached 16,237 (recall 0.490)  +EAR 1.44 bn  THB per extra small defaulter 120,628
+   V2_small   s=0.3  recall 0.653  capture 0.729  EAR 11.78 bn  small reached 20,381 (recall 0.615)  +EAR 2.57 bn  THB per extra small defaulter 159,725
+   V2_small   s=0.4  recall 0.651  capture 0.696  EAR 13.21 bn  small reached 23,489 (recall 0.709)  +EAR 4.00 bn  THB per extra small defaulter 208,423
+   V2_small   s=0.5  recall 0.628  capture 0.653  EAR 15.12 bn  small reached 25,761 (recall 0.777)  +EAR 5.91 bn  THB per extra small defaulter 275,384
+   V2_small   s=1.0  recall 0.291  capture 0.036  EAR 41.95 bn  small reached 30,668 (recall 0.925)  +EAR 32.74 bn  THB per extra small defaulter 1,240,960
+   money_only s=0.0  recall 0.556  capture 0.788  EAR 9.21 bn  small reached 4,282 (recall 0.129)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_rolling XGB__F_SP K=19%  (bank grade: recall 0.729, small-loan recall 0.846, EAR 14.17 bn)
+   V1_open    s=0.1  recall 0.715  capture 0.850  EAR 6.53 bn  small reached 16,838 (recall 0.508)  +EAR 0.60 bn  THB per extra small defaulter 68,412
+   V1_open    s=0.2  recall 0.749  capture 0.833  EAR 7.28 bn  small reached 22,135 (recall 0.668)  +EAR 1.35 bn  THB per extra small defaulter 96,161
+   V1_open    s=0.3  recall 0.763  capture 0.816  EAR 8.00 bn  small reached 24,513 (recall 0.740)  +EAR 2.07 bn  THB per extra small defaulter 126,110
+   V1_open    s=0.4  recall 0.769  capture 0.802  EAR 8.64 bn  small reached 25,383 (recall 0.766)  +EAR 2.70 bn  THB per extra small defaulter 156,538
+   V1_open    s=0.5  recall 0.770  capture 0.791  EAR 9.11 bn  small reached 25,757 (recall 0.777)  +EAR 3.17 bn  THB per extra small defaulter 179,846
+   V1_open    s=1.0  recall 0.772  capture 0.761  EAR 10.41 bn  small reached 26,093 (recall 0.787)  +EAR 4.47 bn  THB per extra small defaulter 248,891
+   V2_small   s=0.1  recall 0.715  capture 0.850  EAR 6.53 bn  small reached 16,838 (recall 0.508)  +EAR 0.60 bn  THB per extra small defaulter 68,412
+   V2_small   s=0.2  recall 0.749  capture 0.832  EAR 7.31 bn  small reached 22,285 (recall 0.672)  +EAR 1.37 bn  THB per extra small defaulter 96,896
+   V2_small   s=0.3  recall 0.761  capture 0.810  EAR 8.26 bn  small reached 25,540 (recall 0.771)  +EAR 2.33 bn  THB per extra small defaulter 133,601
+   V2_small   s=0.4  recall 0.758  capture 0.781  EAR 9.53 bn  small reached 27,612 (recall 0.833)  +EAR 3.59 bn  THB per extra small defaulter 184,256
+   V2_small   s=0.5  recall 0.743  capture 0.746  EAR 11.05 bn  small reached 29,055 (recall 0.877)  +EAR 5.12 bn  THB per extra small defaulter 244,565
+   V2_small   s=1.0  recall 0.304  capture 0.039  EAR 41.83 bn  small reached 32,013 (recall 0.966)  +EAR 35.90 bn  THB per extra small defaulter 1,503,473
+   money_only s=0.0  recall 0.647  capture 0.864  EAR 5.94 bn  small reached 8,136 (recall 0.245)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_rolling XGB__F_SP K=38%  (bank grade: recall 0.868, small-loan recall 0.933, EAR 5.24 bn)
+   V1_open    s=0.1  recall 0.889  capture 0.954  EAR 1.99 bn  small reached 25,938 (recall 0.783)  +EAR 0.31 bn  THB per extra small defaulter 26,783
+   V1_open    s=0.2  recall 0.910  capture 0.946  EAR 2.36 bn  small reached 29,125 (recall 0.879)  +EAR 0.67 bn  THB per extra small defaulter 46,208
+   V1_open    s=0.3  recall 0.913  capture 0.939  EAR 2.67 bn  small reached 29,723 (recall 0.897)  +EAR 0.99 bn  THB per extra small defaulter 64,896
+   V1_open    s=0.4  recall 0.914  capture 0.933  EAR 2.93 bn  small reached 29,903 (recall 0.902)  +EAR 1.24 bn  THB per extra small defaulter 80,988
+   V1_open    s=0.5  recall 0.913  capture 0.927  EAR 3.20 bn  small reached 29,967 (recall 0.904)  +EAR 1.51 bn  THB per extra small defaulter 97,979
+   V1_open    s=1.0  recall 0.913  capture 0.917  EAR 3.63 bn  small reached 30,026 (recall 0.906)  +EAR 1.94 bn  THB per extra small defaulter 125,321
+   V2_small   s=0.1  recall 0.889  capture 0.954  EAR 1.99 bn  small reached 25,938 (recall 0.783)  +EAR 0.31 bn  THB per extra small defaulter 26,783
+   V2_small   s=0.2  recall 0.910  capture 0.945  EAR 2.39 bn  small reached 29,366 (recall 0.886)  +EAR 0.70 bn  THB per extra small defaulter 47,528
+   V2_small   s=0.3  recall 0.908  capture 0.932  EAR 2.98 bn  small reached 30,805 (recall 0.929)  +EAR 1.29 bn  THB per extra small defaulter 79,457
+   V2_small   s=0.4  recall 0.896  capture 0.912  EAR 3.83 bn  small reached 31,642 (recall 0.955)  +EAR 2.14 bn  THB per extra small defaulter 125,224
+   V2_small   s=0.5  recall 0.875  capture 0.883  EAR 5.08 bn  small reached 32,152 (recall 0.970)  +EAR 3.39 bn  THB per extra small defaulter 192,570
+   V2_small   s=1.0  recall 0.314  capture 0.041  EAR 41.75 bn  small reached 33,130 (recall 0.999)  +EAR 40.06 bn  THB per extra small defaulter 2,155,322
+   money_only s=0.0  recall 0.791  capture 0.961  EAR 1.69 bn  small reached 14,542 (recall 0.439)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_rolling LR__F_SP K=13%  (bank grade: recall 0.613, small-loan recall 0.573, EAR 16.58 bn)
+   V1_open    s=0.1  recall 0.595  capture 0.764  EAR 10.28 bn  small reached 10,484 (recall 0.316)  +EAR 0.64 bn  THB per extra small defaulter 96,236
+   V1_open    s=0.2  recall 0.619  capture 0.748  EAR 10.98 bn  small reached 14,455 (recall 0.436)  +EAR 1.34 bn  THB per extra small defaulter 126,278
+   V1_open    s=0.3  recall 0.635  capture 0.734  EAR 11.58 bn  small reached 16,769 (recall 0.506)  +EAR 1.94 bn  THB per extra small defaulter 150,180
+   V1_open    s=0.4  recall 0.644  capture 0.719  EAR 12.21 bn  small reached 18,102 (recall 0.546)  +EAR 2.57 bn  THB per extra small defaulter 180,894
+   V1_open    s=0.5  recall 0.648  capture 0.707  EAR 12.76 bn  small reached 18,881 (recall 0.570)  +EAR 3.12 bn  THB per extra small defaulter 208,007
+   V1_open    s=1.0  recall 0.654  capture 0.678  EAR 14.01 bn  small reached 19,689 (recall 0.594)  +EAR 4.37 bn  THB per extra small defaulter 276,603
+   V2_small   s=0.1  recall 0.595  capture 0.764  EAR 10.28 bn  small reached 10,484 (recall 0.316)  +EAR 0.64 bn  THB per extra small defaulter 96,236
+   V2_small   s=0.2  recall 0.618  capture 0.745  EAR 11.11 bn  small reached 15,253 (recall 0.460)  +EAR 1.46 bn  THB per extra small defaulter 128,776
+   V2_small   s=0.3  recall 0.629  capture 0.721  EAR 12.16 bn  small reached 19,332 (recall 0.583)  +EAR 2.52 bn  THB per extra small defaulter 162,879
+   V2_small   s=0.4  recall 0.626  capture 0.687  EAR 13.62 bn  small reached 22,612 (recall 0.682)  +EAR 3.98 bn  THB per extra small defaulter 212,475
+   V2_small   s=0.5  recall 0.608  capture 0.644  EAR 15.48 bn  small reached 25,133 (recall 0.758)  +EAR 5.84 bn  THB per extra small defaulter 274,587
+   V2_small   s=1.0  recall 0.290  capture 0.036  EAR 41.97 bn  small reached 30,601 (recall 0.923)  +EAR 32.33 bn  THB per extra small defaulter 1,209,969
+   money_only s=0.0  recall 0.549  capture 0.778  EAR 9.64 bn  small reached 3,882 (recall 0.117)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_rolling LR__F_SP K=19%  (bank grade: recall 0.729, small-loan recall 0.846, EAR 14.17 bn)
+   V1_open    s=0.1  recall 0.702  capture 0.841  EAR 6.90 bn  small reached 15,864 (recall 0.479)  +EAR 0.62 bn  THB per extra small defaulter 78,658
+   V1_open    s=0.2  recall 0.735  capture 0.824  EAR 7.65 bn  small reached 20,853 (recall 0.629)  +EAR 1.37 bn  THB per extra small defaulter 106,386
+   V1_open    s=0.3  recall 0.751  capture 0.807  EAR 8.39 bn  small reached 23,530 (recall 0.710)  +EAR 2.11 bn  THB per extra small defaulter 135,569
+   V1_open    s=0.4  recall 0.757  capture 0.789  EAR 9.16 bn  small reached 24,937 (recall 0.752)  +EAR 2.89 bn  THB per extra small defaulter 170,024
+   V1_open    s=0.5  recall 0.759  capture 0.776  EAR 9.76 bn  small reached 25,593 (recall 0.772)  +EAR 3.48 bn  THB per extra small defaulter 197,552
+   V1_open    s=1.0  recall 0.761  capture 0.746  EAR 11.06 bn  small reached 26,126 (recall 0.788)  +EAR 4.78 bn  THB per extra small defaulter 263,139
+   V2_small   s=0.1  recall 0.702  capture 0.841  EAR 6.90 bn  small reached 15,864 (recall 0.479)  +EAR 0.62 bn  THB per extra small defaulter 78,658
+   V2_small   s=0.2  recall 0.736  capture 0.824  EAR 7.67 bn  small reached 21,098 (recall 0.636)  +EAR 1.39 bn  THB per extra small defaulter 106,081
+   V2_small   s=0.3  recall 0.751  capture 0.803  EAR 8.60 bn  small reached 24,739 (recall 0.746)  +EAR 2.32 bn  THB per extra small defaulter 138,186
+   V2_small   s=0.4  recall 0.748  capture 0.774  EAR 9.84 bn  small reached 27,125 (recall 0.818)  +EAR 3.56 bn  THB per extra small defaulter 185,941
+   V2_small   s=0.5  recall 0.728  capture 0.737  EAR 11.43 bn  small reached 28,777 (recall 0.868)  +EAR 5.15 bn  THB per extra small defaulter 247,643
+   V2_small   s=1.0  recall 0.304  capture 0.039  EAR 41.84 bn  small reached 32,060 (recall 0.967)  +EAR 35.56 bn  THB per extra small defaulter 1,475,940
+   money_only s=0.0  recall 0.641  capture 0.856  EAR 6.28 bn  small reached 7,967 (recall 0.240)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_rolling LR__F_SP K=38%  (bank grade: recall 0.868, small-loan recall 0.933, EAR 5.24 bn)
+   V1_open    s=0.1  recall 0.883  capture 0.953  EAR 2.05 bn  small reached 25,913 (recall 0.782)  +EAR 0.29 bn  THB per extra small defaulter 23,928
+   V1_open    s=0.2  recall 0.904  capture 0.942  EAR 2.52 bn  small reached 29,411 (recall 0.887)  +EAR 0.75 bn  THB per extra small defaulter 48,548
+   V1_open    s=0.3  recall 0.905  capture 0.929  EAR 3.07 bn  small reached 30,390 (recall 0.917)  +EAR 1.31 bn  THB per extra small defaulter 79,261
+   V1_open    s=0.4  recall 0.905  capture 0.919  EAR 3.51 bn  small reached 30,678 (recall 0.926)  +EAR 1.74 bn  THB per extra small defaulter 103,914
+   V1_open    s=0.5  recall 0.905  capture 0.911  EAR 3.86 bn  small reached 30,786 (recall 0.929)  +EAR 2.10 bn  THB per extra small defaulter 124,184
+   V1_open    s=1.0  recall 0.904  capture 0.895  EAR 4.56 bn  small reached 30,855 (recall 0.931)  +EAR 2.80 bn  THB per extra small defaulter 165,122
+   V2_small   s=0.1  recall 0.883  capture 0.953  EAR 2.05 bn  small reached 25,913 (recall 0.782)  +EAR 0.29 bn  THB per extra small defaulter 23,928
+   V2_small   s=0.2  recall 0.904  capture 0.942  EAR 2.52 bn  small reached 29,429 (recall 0.888)  +EAR 0.76 bn  THB per extra small defaulter 48,705
+   V2_small   s=0.3  recall 0.901  capture 0.926  EAR 3.23 bn  small reached 30,876 (recall 0.931)  +EAR 1.47 bn  THB per extra small defaulter 86,488
+   V2_small   s=0.4  recall 0.890  capture 0.905  EAR 4.15 bn  small reached 31,750 (recall 0.958)  +EAR 2.39 bn  THB per extra small defaulter 133,763
+   V2_small   s=0.5  recall 0.871  capture 0.875  EAR 5.42 bn  small reached 32,244 (recall 0.973)  +EAR 3.66 bn  THB per extra small defaulter 199,534
+   V2_small   s=1.0  recall 0.314  capture 0.041  EAR 41.75 bn  small reached 33,140 (recall 1.000)  +EAR 39.99 bn  THB per extra small defaulter 2,079,154
+   money_only s=0.0  recall 0.779  capture 0.959  EAR 1.76 bn  small reached 13,907 (recall 0.420)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_main XGB__F_SP K=13%  (bank grade: recall 0.487, small-loan recall 0.548, EAR 37.51 bn)
+   V1_open    s=0.1  recall 0.542  capture 0.730  EAR 18.25 bn  small reached 20,889 (recall 0.321)  +EAR 1.11 bn  THB per extra small defaulter 68,422
+   V1_open    s=0.2  recall 0.584  capture 0.718  EAR 19.08 bn  small reached 29,861 (recall 0.459)  +EAR 1.94 bn  THB per extra small defaulter 76,993
+   V1_open    s=0.3  recall 0.605  capture 0.706  EAR 19.90 bn  small reached 33,842 (recall 0.520)  +EAR 2.76 bn  THB per extra small defaulter 94,925
+   V1_open    s=0.4  recall 0.619  capture 0.694  EAR 20.70 bn  small reached 36,556 (recall 0.562)  +EAR 3.56 bn  THB per extra small defaulter 111,879
+   V1_open    s=0.5  recall 0.627  capture 0.684  EAR 21.36 bn  small reached 38,139 (recall 0.586)  +EAR 4.22 bn  THB per extra small defaulter 126,352
+   V1_open    s=1.0  recall 0.637  capture 0.661  EAR 22.95 bn  small reached 39,814 (recall 0.612)  +EAR 5.81 bn  THB per extra small defaulter 165,567
+   V2_small   s=0.1  recall 0.542  capture 0.730  EAR 18.25 bn  small reached 20,889 (recall 0.321)  +EAR 1.11 bn  THB per extra small defaulter 68,422
+   V2_small   s=0.2  recall 0.585  capture 0.713  EAR 19.37 bn  small reached 32,149 (recall 0.494)  +EAR 2.24 bn  THB per extra small defaulter 81,474
+   V2_small   s=0.3  recall 0.613  capture 0.687  EAR 21.14 bn  small reached 41,612 (recall 0.639)  +EAR 4.00 bn  THB per extra small defaulter 108,316
+   V2_small   s=0.4  recall 0.613  capture 0.652  EAR 23.53 bn  small reached 48,016 (recall 0.738)  +EAR 6.39 bn  THB per extra small defaulter 147,656
+   V2_small   s=0.5  recall 0.590  capture 0.607  EAR 26.55 bn  small reached 51,523 (recall 0.791)  +EAR 9.41 bn  THB per extra small defaulter 201,032
+   V2_small   s=1.0  recall 0.326  capture 0.042  EAR 64.75 bn  small reached 58,827 (recall 0.904)  +EAR 47.61 bn  THB per extra small defaulter 879,791
+   money_only s=0.0  recall 0.471  capture 0.746  EAR 17.14 bn  small reached 4,715 (recall 0.072)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_main XGB__F_SP K=19%  (bank grade: recall 0.592, small-loan recall 0.737, EAR 32.54 bn)
+   V1_open    s=0.1  recall 0.664  capture 0.819  EAR 12.22 bn  small reached 31,776 (recall 0.488)  +EAR 0.87 bn  THB per extra small defaulter 41,189
+   V1_open    s=0.2  recall 0.712  capture 0.805  EAR 13.16 bn  small reached 41,997 (recall 0.645)  +EAR 1.82 bn  THB per extra small defaulter 57,986
+   V1_open    s=0.3  recall 0.729  capture 0.794  EAR 13.90 bn  small reached 45,136 (recall 0.693)  +EAR 2.56 bn  THB per extra small defaulter 74,073
+   V1_open    s=0.4  recall 0.736  capture 0.785  EAR 14.51 bn  small reached 46,317 (recall 0.711)  +EAR 3.17 bn  THB per extra small defaulter 88,712
+   V1_open    s=0.5  recall 0.739  capture 0.778  EAR 15.03 bn  small reached 46,885 (recall 0.720)  +EAR 3.69 bn  THB per extra small defaulter 101,572
+   V1_open    s=1.0  recall 0.743  capture 0.762  EAR 16.11 bn  small reached 47,383 (recall 0.728)  +EAR 4.77 bn  THB per extra small defaulter 129,625
+   V2_small   s=0.1  recall 0.664  capture 0.819  EAR 12.22 bn  small reached 31,776 (recall 0.488)  +EAR 0.87 bn  THB per extra small defaulter 41,189
+   V2_small   s=0.2  recall 0.717  capture 0.801  EAR 13.44 bn  small reached 44,619 (recall 0.685)  +EAR 2.10 bn  THB per extra small defaulter 61,667
+   V2_small   s=0.3  recall 0.729  capture 0.777  EAR 15.04 bn  small reached 50,673 (recall 0.778)  +EAR 3.70 bn  THB per extra small defaulter 92,324
+   V2_small   s=0.4  recall 0.721  capture 0.746  EAR 17.14 bn  small reached 53,841 (recall 0.827)  +EAR 5.79 bn  THB per extra small defaulter 134,024
+   V2_small   s=0.5  recall 0.701  capture 0.708  EAR 19.75 bn  small reached 56,020 (recall 0.860)  +EAR 8.41 bn  THB per extra small defaulter 185,175
+   V2_small   s=1.0  recall 0.342  capture 0.045  EAR 64.54 bn  small reached 61,815 (recall 0.949)  +EAR 53.20 bn  THB per extra small defaulter 1,038,837
+   money_only s=0.0  recall 0.563  capture 0.832  EAR 11.34 bn  small reached 10,605 (recall 0.163)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_main XGB__F_SP K=38%  (bank grade: recall 0.829, small-loan recall 0.888, EAR 10.76 bn)
+   V1_open    s=0.1  recall 0.873  capture 0.945  EAR 3.72 bn  small reached 51,431 (recall 0.790)  +EAR 0.44 bn  THB per extra small defaulter 15,488
+   V1_open    s=0.2  recall 0.885  capture 0.938  EAR 4.20 bn  small reached 54,445 (recall 0.836)  +EAR 0.92 bn  THB per extra small defaulter 29,344
+   V1_open    s=0.3  recall 0.890  capture 0.932  EAR 4.58 bn  small reached 55,427 (recall 0.851)  +EAR 1.30 bn  THB per extra small defaulter 40,103
+   V1_open    s=0.4  recall 0.892  capture 0.927  EAR 4.91 bn  small reached 55,810 (recall 0.857)  +EAR 1.63 bn  THB per extra small defaulter 49,701
+   V1_open    s=0.5  recall 0.892  capture 0.923  EAR 5.19 bn  small reached 56,004 (recall 0.860)  +EAR 1.91 bn  THB per extra small defaulter 57,853
+   V1_open    s=1.0  recall 0.893  capture 0.917  EAR 5.64 bn  small reached 56,161 (recall 0.863)  +EAR 2.37 bn  THB per extra small defaulter 71,173
+   V2_small   s=0.1  recall 0.873  capture 0.945  EAR 3.72 bn  small reached 51,449 (recall 0.790)  +EAR 0.44 bn  THB per extra small defaulter 15,564
+   V2_small   s=0.2  recall 0.885  capture 0.933  EAR 4.52 bn  small reached 56,298 (recall 0.865)  +EAR 1.24 bn  THB per extra small defaulter 37,251
+   V2_small   s=0.3  recall 0.880  capture 0.916  EAR 5.70 bn  small reached 58,965 (recall 0.906)  +EAR 2.42 bn  THB per extra small defaulter 67,128
+   V2_small   s=0.4  recall 0.868  capture 0.892  EAR 7.30 bn  small reached 60,804 (recall 0.934)  +EAR 4.03 bn  THB per extra small defaulter 106,335
+   V2_small   s=0.5  recall 0.849  capture 0.860  EAR 9.44 bn  small reached 62,198 (recall 0.955)  +EAR 6.17 bn  THB per extra small defaulter 157,072
+   V2_small   s=1.0  recall 0.360  capture 0.048  EAR 64.36 bn  small reached 65,061 (recall 0.999)  +EAR 61.08 bn  THB per extra small defaulter 1,449,570
+   money_only s=0.0  recall 0.728  capture 0.952  EAR 3.28 bn  small reached 22,923 (recall 0.352)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_main LR__F_SP K=13%  (bank grade: recall 0.487, small-loan recall 0.548, EAR 37.51 bn)
+   V1_open    s=0.1  recall 0.540  capture 0.717  EAR 19.13 bn  small reached 20,647 (recall 0.317)  +EAR 1.05 bn  THB per extra small defaulter 70,213
+   V1_open    s=0.2  recall 0.582  capture 0.700  EAR 20.30 bn  small reached 30,923 (recall 0.475)  +EAR 2.21 bn  THB per extra small defaulter 87,986
+   V1_open    s=0.3  recall 0.599  capture 0.684  EAR 21.37 bn  small reached 35,257 (recall 0.542)  +EAR 3.29 bn  THB per extra small defaulter 111,395
+   V1_open    s=0.4  recall 0.609  capture 0.670  EAR 22.29 bn  small reached 37,591 (recall 0.577)  +EAR 4.21 bn  THB per extra small defaulter 132,197
+   V1_open    s=0.5  recall 0.615  capture 0.660  EAR 23.01 bn  small reached 38,917 (recall 0.598)  +EAR 4.93 bn  THB per extra small defaulter 148,538
+   V1_open    s=1.0  recall 0.622  capture 0.631  EAR 24.93 bn  small reached 40,346 (recall 0.620)  +EAR 6.84 bn  THB per extra small defaulter 197,868
+   V2_small   s=0.1  recall 0.540  capture 0.717  EAR 19.13 bn  small reached 20,647 (recall 0.317)  +EAR 1.05 bn  THB per extra small defaulter 70,213
+   V2_small   s=0.2  recall 0.583  capture 0.698  EAR 20.40 bn  small reached 31,800 (recall 0.488)  +EAR 2.31 bn  THB per extra small defaulter 88,873
+   V2_small   s=0.3  recall 0.598  capture 0.673  EAR 22.08 bn  small reached 38,949 (recall 0.598)  +EAR 4.00 bn  THB per extra small defaulter 120,484
+   V2_small   s=0.4  recall 0.592  capture 0.639  EAR 24.41 bn  small reached 44,525 (recall 0.684)  +EAR 6.33 bn  THB per extra small defaulter 163,345
+   V2_small   s=0.5  recall 0.571  capture 0.596  EAR 27.33 bn  small reached 48,610 (recall 0.747)  +EAR 9.25 bn  THB per extra small defaulter 215,815
+   V2_small   s=1.0  recall 0.323  capture 0.041  EAR 64.84 bn  small reached 58,253 (recall 0.895)  +EAR 46.76 bn  THB per extra small defaulter 890,775
+   money_only s=0.0  recall 0.474  capture 0.733  EAR 18.08 bn  small reached 5,756 (recall 0.088)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_main LR__F_SP K=19%  (bank grade: recall 0.592, small-loan recall 0.737, EAR 32.54 bn)
+   V1_open    s=0.1  recall 0.665  capture 0.802  EAR 13.42 bn  small reached 32,752 (recall 0.503)  +EAR 1.13 bn  THB per extra small defaulter 56,047
+   V1_open    s=0.2  recall 0.700  capture 0.783  EAR 14.64 bn  small reached 41,646 (recall 0.640)  +EAR 2.36 bn  THB per extra small defaulter 80,996
+   V1_open    s=0.3  recall 0.714  capture 0.768  EAR 15.67 bn  small reached 45,138 (recall 0.693)  +EAR 3.39 bn  THB per extra small defaulter 103,962
+   V1_open    s=0.4  recall 0.720  capture 0.755  EAR 16.59 bn  small reached 46,788 (recall 0.719)  +EAR 4.30 bn  THB per extra small defaulter 125,770
+   V1_open    s=0.5  recall 0.724  capture 0.743  EAR 17.36 bn  small reached 47,652 (recall 0.732)  +EAR 5.07 bn  THB per extra small defaulter 144,506
+   V1_open    s=1.0  recall 0.727  capture 0.723  EAR 18.70 bn  small reached 48,380 (recall 0.743)  +EAR 6.41 bn  THB per extra small defaulter 179,052
+   V2_small   s=0.1  recall 0.665  capture 0.802  EAR 13.42 bn  small reached 32,752 (recall 0.503)  +EAR 1.13 bn  THB per extra small defaulter 56,047
+   V2_small   s=0.2  recall 0.700  capture 0.782  EAR 14.71 bn  small reached 42,224 (recall 0.649)  +EAR 2.42 bn  THB per extra small defaulter 81,681
+   V2_small   s=0.3  recall 0.711  capture 0.760  EAR 16.25 bn  small reached 47,923 (recall 0.736)  +EAR 3.97 bn  THB per extra small defaulter 112,191
+   V2_small   s=0.4  recall 0.709  capture 0.730  EAR 18.22 bn  small reached 51,870 (recall 0.797)  +EAR 5.94 bn  THB per extra small defaulter 151,073
+   V2_small   s=0.5  recall 0.693  capture 0.693  EAR 20.74 bn  small reached 54,602 (recall 0.839)  +EAR 8.45 bn  THB per extra small defaulter 201,084
+   V2_small   s=1.0  recall 0.342  capture 0.045  EAR 64.59 bn  small reached 61,712 (recall 0.948)  +EAR 52.30 bn  THB per extra small defaulter 1,064,085
+   money_only s=0.0  recall 0.568  capture 0.818  EAR 12.28 bn  small reached 12,561 (recall 0.193)  +EAR 0.00 bn  THB per extra small defaulter -
+
+-- exante_main LR__F_SP K=38%  (bank grade: recall 0.829, small-loan recall 0.888, EAR 10.76 bn)
+   V1_open    s=0.1  recall 0.853  capture 0.933  EAR 4.51 bn  small reached 49,908 (recall 0.767)  +EAR 0.71 bn  THB per extra small defaulter 27,370
+   V1_open    s=0.2  recall 0.870  capture 0.921  EAR 5.37 bn  small reached 55,177 (recall 0.848)  +EAR 1.58 bn  THB per extra small defaulter 50,416
+   V1_open    s=0.3  recall 0.875  capture 0.909  EAR 6.14 bn  small reached 56,838 (recall 0.873)  +EAR 2.35 bn  THB per extra small defaulter 71,000
+   V1_open    s=0.4  recall 0.877  capture 0.900  EAR 6.79 bn  small reached 57,527 (recall 0.884)  +EAR 3.00 bn  THB per extra small defaulter 88,921
+   V1_open    s=0.5  recall 0.878  capture 0.892  EAR 7.31 bn  small reached 57,817 (recall 0.888)  +EAR 3.52 bn  THB per extra small defaulter 103,544
+   V1_open    s=1.0  recall 0.879  capture 0.878  EAR 8.23 bn  small reached 58,031 (recall 0.891)  +EAR 4.44 bn  THB per extra small defaulter 129,820
+   V2_small   s=0.1  recall 0.853  capture 0.933  EAR 4.51 bn  small reached 49,908 (recall 0.767)  +EAR 0.71 bn  THB per extra small defaulter 27,370
+   V2_small   s=0.2  recall 0.870  capture 0.919  EAR 5.45 bn  small reached 55,654 (recall 0.855)  +EAR 1.66 bn  THB per extra small defaulter 52,186
+   V2_small   s=0.3  recall 0.870  capture 0.901  EAR 6.69 bn  small reached 58,790 (recall 0.903)  +EAR 2.90 bn  THB per extra small defaulter 82,953
+   V2_small   s=0.4  recall 0.860  capture 0.876  EAR 8.39 bn  small reached 60,803 (recall 0.934)  +EAR 4.60 bn  THB per extra small defaulter 124,381
+   V2_small   s=0.5  recall 0.843  capture 0.843  EAR 10.58 bn  small reached 62,235 (recall 0.956)  +EAR 6.79 bn  THB per extra small defaulter 176,656
+   V2_small   s=1.0  recall 0.361  capture 0.048  EAR 64.36 bn  small reached 65,100 (recall 1.000)  +EAR 60.57 bn  THB per extra small defaulter 1,466,467
+   money_only s=0.0  recall 0.722  capture 0.944  EAR 3.79 bn  small reached 23,800 (recall 0.366)  +EAR 0.00 bn  THB per extra small defaulter -
+
+== recommended share s* (smallest s matching the bank grade's small-loan recall, chosen on 2021) ==
+   XGB__F_SP  V1_open   K=10%  s*=0.5  2022: recall 0.537  small recall 0.463 (bank 0.431)  EAR 25.72 bn (money-only 21.46 bn, bank 38.53 bn)
+   XGB__F_SP  V1_open   K=13%  s*=0.3  2022: recall 0.605  small recall 0.520 (bank 0.548)  EAR 19.90 bn (money-only 17.14 bn, bank 37.51 bn)
+   XGB__F_SP  V1_open   K=19%  s*=none  2022: recall NA  small recall NA (bank 0.737)  EAR NA bn (money-only 11.34 bn, bank 32.54 bn)
+   XGB__F_SP  V1_open   K=20%  s*=none  2022: recall NA  small recall NA (bank 0.737)  EAR NA bn (money-only 10.62 bn, bank 31.43 bn)
+   XGB__F_SP  V1_open   K=30%  s*=none  2022: recall NA  small recall NA (bank 0.833)  EAR NA bn (money-only 5.56 bn, bank 24.61 bn)
+   XGB__F_SP  V1_open   K=38%  s*=none  2022: recall NA  small recall NA (bank 0.888)  EAR NA bn (money-only 3.28 bn, bank 10.76 bn)
+   XGB__F_SP  V2_small  K=10%  s*=0.3  2022: recall 0.511  small recall 0.526 (bank 0.431)  EAR 25.94 bn (money-only 21.46 bn, bank 38.53 bn)
+   XGB__F_SP  V2_small  K=13%  s*=0.3  2022: recall 0.613  small recall 0.639 (bank 0.548)  EAR 21.14 bn (money-only 17.14 bn, bank 37.51 bn)
+   XGB__F_SP  V2_small  K=19%  s*=0.5  2022: recall 0.701  small recall 0.860 (bank 0.737)  EAR 19.75 bn (money-only 11.34 bn, bank 32.54 bn)
+   XGB__F_SP  V2_small  K=20%  s*=0.4  2022: recall 0.733  small recall 0.837 (bank 0.737)  EAR 16.36 bn (money-only 10.62 bn, bank 31.43 bn)
+   XGB__F_SP  V2_small  K=30%  s*=0.4  2022: recall 0.822  small recall 0.903 (bank 0.833)  EAR 10.37 bn (money-only 5.56 bn, bank 24.61 bn)
+   XGB__F_SP  V2_small  K=38%  s*=0.4  2022: recall 0.868  small recall 0.934 (bank 0.888)  EAR 7.30 bn (money-only 3.28 bn, bank 10.76 bn)
+   LR__F_SP   V1_open   K=10%  s*=none  2022: recall NA  small recall NA (bank 0.431)  EAR NA bn (money-only 22.34 bn, bank 38.53 bn)
+   LR__F_SP   V1_open   K=13%  s*=1.0  2022: recall 0.622  small recall 0.620 (bank 0.548)  EAR 24.93 bn (money-only 18.08 bn, bank 37.51 bn)
+   LR__F_SP   V1_open   K=19%  s*=none  2022: recall NA  small recall NA (bank 0.737)  EAR NA bn (money-only 12.28 bn, bank 32.54 bn)
+   LR__F_SP   V1_open   K=20%  s*=none  2022: recall NA  small recall NA (bank 0.737)  EAR NA bn (money-only 11.58 bn, bank 31.43 bn)
+   LR__F_SP   V1_open   K=30%  s*=none  2022: recall NA  small recall NA (bank 0.833)  EAR NA bn (money-only 6.25 bn, bank 24.61 bn)
+   LR__F_SP   V1_open   K=38%  s*=none  2022: recall NA  small recall NA (bank 0.888)  EAR NA bn (money-only 3.79 bn, bank 10.76 bn)
+   LR__F_SP   V2_small  K=10%  s*=0.4  2022: recall 0.501  small recall 0.605 (bank 0.431)  EAR 29.14 bn (money-only 22.34 bn, bank 38.53 bn)
+   LR__F_SP   V2_small  K=13%  s*=0.3  2022: recall 0.598  small recall 0.598 (bank 0.548)  EAR 22.08 bn (money-only 18.08 bn, bank 37.51 bn)
+   LR__F_SP   V2_small  K=19%  s*=0.5  2022: recall 0.693  small recall 0.839 (bank 0.737)  EAR 20.74 bn (money-only 12.28 bn, bank 32.54 bn)
+   LR__F_SP   V2_small  K=20%  s*=0.5  2022: recall 0.706  small recall 0.850 (bank 0.737)  EAR 19.99 bn (money-only 11.58 bn, bank 31.43 bn)
+   LR__F_SP   V2_small  K=30%  s*=0.4  2022: recall 0.814  small recall 0.897 (bank 0.833)  EAR 11.57 bn (money-only 6.25 bn, bank 24.61 bn)
+   LR__F_SP   V2_small  K=38%  s*=0.4  2022: recall 0.860  small recall 0.934 (bank 0.888)  EAR 8.39 bn (money-only 3.79 bn, bank 10.76 bn)
+
+== bootstrap (2022, K = 19%): recommended mixed policy vs money-only and vs bank grade ==
+   XGB__F_SP V1_open: no s reaches the target on 2021
+   XGB__F_SP V2_small s*=0.5  vs money-only: EAR [+8.00, +8.84] bn, small defaulters reached [+43800, +47268] | vs bank grade: EAR [-13.68, -11.95] bn, small reached [+7641, +8503]
+   LR__F_SP V1_open: no s reaches the target on 2021
+   LR__F_SP V2_small s*=0.5  vs money-only: EAR [+8.03, +8.91] bn, small defaulters reached [+40579, +43651] | vs bank grade: EAR [-12.62, -11.05] bn, small reached [+6290, +7020]
+
+done. Paste fi_out/fi05_log.txt into the chat.

@@ -1,0 +1,76 @@
+fi_04_sensitivity  2026-10-26 19:16:04
+rules selected on 2021 by fi_03: LR__F_SP -> R2_EXP, XGB__F_SP -> R3_EL
+
+== A. 2022 by quintile of opening balance Outb ==
+  Q1  Outb 0..52,892 THB  n=299,345  defaulters 40,364  their Out 0.64 bn
+  Q2  Outb 52,892..161,374 THB  n=299,344  defaulters 24,739  their Out 2.60 bn
+  Q3  Outb 161,374..302,803 THB  n=299,344  defaulters 29,914  their Out 6.88 bn
+  Q4  Outb 302,804..530,000 THB  n=299,344  defaulters 40,311  their Out 16.40 bn
+  Q5  Outb 530,000..94,179,178 THB  n=299,344  defaulters 45,228  their Out 41.07 bn
+K = 10%  (share followed up / recall within group)
+   LR__F_SP R1_PD     Q1  9.1%/53.0%  Q2  6.3%/49.9%  Q3  8.0%/50.0%  Q4 12.1%/55.8%  Q5 14.5%/57.6%
+   LR__F_SP R2_EXP    Q1  0.0%/ 0.0%  Q2  0.7%/ 6.4%  Q3  6.5%/43.9%  Q4 15.2%/62.6%  Q5 27.6%/74.6%
+   XGB__F_SP R1_PD    Q1  7.4%/47.8%  Q2  6.1%/50.7%  Q3  8.4%/53.4%  Q4 12.9%/59.2%  Q5 15.2%/60.4%
+   XGB__F_SP R3_EL    Q1  0.0%/ 0.0%  Q2  0.5%/ 5.0%  Q3  5.8%/41.5%  Q4 14.3%/62.1%  Q5 29.3%/77.0%
+   none R0_TIER       Q1  9.4%/44.4%  Q2  5.9%/41.0%  Q3  7.2%/38.2%  Q4 13.1%/45.3%  Q5 14.5%/44.2%
+K = 20%  (share followed up / recall within group)
+   LR__F_SP R1_PD     Q1 20.2%/79.4%  Q2 13.7%/70.1%  Q3 16.9%/69.7%  Q4 22.7%/73.3%  Q5 26.5%/74.7%
+   LR__F_SP R2_EXP    Q1  0.4%/ 2.7%  Q2  6.8%/50.7%  Q3 15.0%/66.7%  Q4 27.6%/77.6%  Q5 50.1%/88.5%
+   XGB__F_SP R1_PD    Q1 14.5%/77.9%  Q2 11.7%/67.6%  Q3 16.7%/70.4%  Q4 25.8%/77.2%  Q5 31.3%/79.9%
+   XGB__F_SP R3_EL    Q1  0.1%/ 1.0%  Q2  5.3%/45.5%  Q3 12.6%/63.3%  Q4 28.7%/79.7%  Q5 53.2%/91.4%
+   none R0_TIER       Q1 36.3%/84.7%  Q2 11.7%/55.7%  Q3 11.7%/49.1%  Q4 17.9%/53.4%  Q5 22.3%/55.4%
+K = 30%  (share followed up / recall within group)
+   LR__F_SP R1_PD     Q1 30.5%/89.5%  Q2 21.3%/78.8%  Q3 25.9%/78.8%  Q4 33.4%/81.9%  Q5 38.9%/83.7%
+   LR__F_SP R2_EXP    Q1  2.0%/10.7%  Q2 11.7%/65.4%  Q3 23.0%/76.2%  Q4 41.5%/86.6%  Q5 71.8%/96.0%
+   XGB__F_SP R1_PD    Q1 19.6%/85.3%  Q2 17.7%/76.2%  Q3 26.8%/81.0%  Q4 39.4%/87.2%  Q5 46.5%/89.1%
+   XGB__F_SP R3_EL    Q1  1.6%/ 9.5%  Q2  9.1%/60.5%  Q3 22.2%/76.5%  Q4 46.2%/90.5%  Q5 70.9%/96.8%
+   none R0_TIER       Q1 42.5%/90.5%  Q2 23.8%/71.5%  Q3 26.0%/66.7%  Q4 28.5%/65.3%  Q5 29.3%/63.3%
+
+== B. large-loan robustness (2022) ==
+variant drop_top removes 1,497 borrowers with Outb > 4,213,480 THB
+  primary   K=10%  LR__F_SP/R1_PD cap 0.558 EAR 29.87 bn | LR__F_SP/R2_EXP cap 0.670 EAR 22.34 bn | LR__F_SP/R3_EL cap 0.669 EAR 22.36 bn | XGB__F_SP/R1_PD cap 0.588 EAR 27.85 bn | XGB__F_SP/R2_EXP cap 0.683 EAR 21.43 bn | XGB__F_SP/R3_EL cap 0.683 EAR 21.46 bn | none/R0_TIER cap 0.430 EAR 38.53 bn
+  primary   K=20%  LR__F_SP/R1_PD cap 0.735 EAR 17.92 bn | LR__F_SP/R2_EXP cap 0.829 EAR 11.58 bn | LR__F_SP/R3_EL cap 0.828 EAR 11.60 bn | XGB__F_SP/R1_PD cap 0.776 EAR 15.17 bn | XGB__F_SP/R2_EXP cap 0.843 EAR 10.62 bn | XGB__F_SP/R3_EL cap 0.843 EAR 10.62 bn | none/R0_TIER cap 0.535 EAR 31.43 bn
+  primary   K=30%  LR__F_SP/R1_PD cap 0.824 EAR 11.87 bn | LR__F_SP/R2_EXP cap 0.908 EAR 6.25 bn | LR__F_SP/R3_EL cap 0.907 EAR 6.26 bn | XGB__F_SP/R1_PD cap 0.871 EAR 8.73 bn | XGB__F_SP/R2_EXP cap 0.918 EAR 5.56 bn | XGB__F_SP/R3_EL cap 0.918 EAR 5.56 bn | none/R0_TIER cap 0.636 EAR 24.61 bn
+  drop_top  K=10%  LR__F_SP/R1_PD cap 0.559 EAR 29.25 bn | LR__F_SP/R2_EXP cap 0.665 EAR 22.19 bn | LR__F_SP/R3_EL cap 0.665 EAR 22.22 bn | XGB__F_SP/R1_PD cap 0.588 EAR 27.30 bn | XGB__F_SP/R2_EXP cap 0.679 EAR 21.28 bn | XGB__F_SP/R3_EL cap 0.679 EAR 21.30 bn | none/R0_TIER cap 0.432 EAR 37.67 bn
+  drop_top  K=20%  LR__F_SP/R1_PD cap 0.735 EAR 17.60 bn | LR__F_SP/R2_EXP cap 0.826 EAR 11.52 bn | LR__F_SP/R3_EL cap 0.826 EAR 11.54 bn | XGB__F_SP/R1_PD cap 0.776 EAR 14.85 bn | XGB__F_SP/R2_EXP cap 0.841 EAR 10.56 bn | XGB__F_SP/R3_EL cap 0.841 EAR 10.57 bn | none/R0_TIER cap 0.538 EAR 30.64 bn
+  drop_top  K=30%  LR__F_SP/R1_PD cap 0.824 EAR 11.64 bn | LR__F_SP/R2_EXP cap 0.906 EAR 6.23 bn | LR__F_SP/R3_EL cap 0.906 EAR 6.23 bn | XGB__F_SP/R1_PD cap 0.872 EAR 8.48 bn | XGB__F_SP/R2_EXP cap 0.917 EAR 5.53 bn | XGB__F_SP/R3_EL cap 0.917 EAR 5.53 bn | none/R0_TIER cap 0.639 EAR 23.94 bn
+  cap_ead   K=10%  LR__F_SP/R1_PD cap 0.559 EAR 27.12 bn | LR__F_SP/R2_EXP cap 0.651 EAR 21.47 bn | LR__F_SP/R3_EL cap 0.651 EAR 21.48 bn | XGB__F_SP/R1_PD cap 0.589 EAR 25.29 bn | XGB__F_SP/R2_EXP cap 0.663 EAR 20.73 bn | XGB__F_SP/R3_EL cap 0.663 EAR 20.75 bn | none/R0_TIER cap 0.434 EAR 34.81 bn
+  cap_ead   K=20%  LR__F_SP/R1_PD cap 0.735 EAR 16.28 bn | LR__F_SP/R2_EXP cap 0.815 EAR 11.40 bn | LR__F_SP/R3_EL cap 0.814 EAR 11.42 bn | XGB__F_SP/R1_PD cap 0.776 EAR 13.76 bn | XGB__F_SP/R2_EXP cap 0.831 EAR 10.40 bn | XGB__F_SP/R3_EL cap 0.831 EAR 10.40 bn | none/R0_TIER cap 0.541 EAR 28.23 bn
+  cap_ead   K=30%  LR__F_SP/R1_PD cap 0.825 EAR 10.79 bn | LR__F_SP/R2_EXP cap 0.899 EAR 6.23 bn | LR__F_SP/R3_EL cap 0.899 EAR 6.24 bn | XGB__F_SP/R1_PD cap 0.872 EAR 7.86 bn | XGB__F_SP/R2_EXP cap 0.911 EAR 5.49 bn | XGB__F_SP/R3_EL cap 0.911 EAR 5.49 bn | none/R0_TIER cap 0.644 EAR 21.90 bn
+
+== C. LGD x MRR: tau*, implied follow-up volume, loss left at that volume (2022) ==
+  XGB__F_SP (R3_EL): follow-up volume implied by tau* [rows LGD, columns MRR 4.575% 5.575% 6.575% 7.575% 8.575%]
+     LGD 0.2   16.5%  14.9%  13.7%  12.7%  12.0%   | principal loss left at MRR 6.575%: 3.20 bn
+     LGD 0.4   24.7%  22.0%  20.0%  18.4%  17.1%   | principal loss left at MRR 6.575%: 4.25 bn
+     LGD 0.6   31.2%  27.8%  25.3%  23.3%  21.7%   | principal loss left at MRR 6.575%: 4.59 bn
+     LGD 0.8   36.5%  32.8%  29.9%  27.5%  25.6%   | principal loss left at MRR 6.575%: 4.45 bn
+     LGD 1.0   40.8%  36.9%  33.8%  31.3%  29.1%   | principal loss left at MRR 6.575%: 4.26 bn
+  LR__F_SP (R2_EXP): follow-up volume implied by tau* [rows LGD, columns MRR 4.575% 5.575% 6.575% 7.575% 8.575%]
+     LGD 0.2   18.5%  16.9%  15.7%  14.7%  13.9%   | principal loss left at MRR 6.575%: 2.98 bn
+     LGD 0.4   25.7%  23.3%  21.6%  20.2%  19.0%   | principal loss left at MRR 6.575%: 4.09 bn
+     LGD 0.6   31.6%  28.5%  26.3%  24.5%  23.1%   | principal loss left at MRR 6.575%: 4.79 bn
+     LGD 0.8   36.8%  33.1%  30.4%  28.3%  26.6%   | principal loss left at MRR 6.575%: 5.00 bn
+     LGD 1.0   41.6%  37.3%  34.1%  31.7%  29.7%   | principal loss left at MRR 6.575%: 4.89 bn
+  (volumes above 40% are evaluated at K = 40%, the end of the frontier)
+
+== D. recommended K for a follow-up cost c and save-rate theta: chosen on 2021, reported on 2022 ==
+  XGB__F_SP theta=0.05  c=  250: K=40% net 3.09 bn | c=  500: K=33% net 2.91 bn | c=  750: K=26% net 2.73 bn | c=1,000: K=24% net 2.61 bn | c=2,000: K=15% net 2.19 bn | c=5,000: K=7% net 1.47 bn
+  XGB__F_SP theta=0.10  c=  250: K=40% net 6.32 bn | c=  500: K=40% net 6.17 bn | c=  750: K=37% net 6.00 bn | c=1,000: K=33% net 5.81 bn | c=2,000: K=24% net 5.23 bn | c=5,000: K=13% net 4.07 bn
+  XGB__F_SP theta=0.20  c=  250: K=40% net 12.79 bn | c=  500: K=40% net 12.64 bn | c=  750: K=40% net 12.49 bn | c=1,000: K=40% net 12.34 bn | c=2,000: K=33% net 11.62 bn | c=5,000: K=21% net 9.96 bn
+  XGB__F_SP theta=0.30  c=  250: K=40% net 19.27 bn | c=  500: K=40% net 19.12 bn | c=  750: K=40% net 18.97 bn | c=1,000: K=40% net 18.82 bn | c=2,000: K=38% net 18.16 bn | c=5,000: K=25% net 16.11 bn
+  LR__F_SP theta=0.05  c=  250: K=40% net 3.06 bn | c=  500: K=33% net 2.87 bn | c=  750: K=30% net 2.73 bn | c=1,000: K=24% net 2.57 bn | c=2,000: K=15% net 2.14 bn | c=5,000: K=8% net 1.48 bn
+  LR__F_SP theta=0.10  c=  250: K=40% net 6.28 bn | c=  500: K=40% net 6.13 bn | c=  750: K=38% net 5.95 bn | c=1,000: K=33% net 5.75 bn | c=2,000: K=24% net 5.14 bn | c=5,000: K=13% net 3.98 bn
+  LR__F_SP theta=0.20  c=  250: K=40% net 12.70 bn | c=  500: K=40% net 12.55 bn | c=  750: K=40% net 12.40 bn | c=1,000: K=40% net 12.25 bn | c=2,000: K=33% net 11.49 bn | c=5,000: K=21% net 9.78 bn
+  LR__F_SP theta=0.30  c=  250: K=40% net 19.13 bn | c=  500: K=40% net 18.98 bn | c=  750: K=40% net 18.83 bn | c=1,000: K=40% net 18.68 bn | c=2,000: K=40% net 18.08 bn | c=5,000: K=26% net 15.94 bn
+
+net = theta x LGD x exposure reached - cost x follow-ups, on 2022, with K fixed from 2021.
+
+workload at 4 follow-ups per officer-day (base cost 500 THB per follow-up):
+   K =  5%  74,836 follow-ups = 18,709 officer-days = 19 days per officer (of ~998), 37,418,000 THB
+   K = 10%  149,672 follow-ups = 37,418 officer-days = 37 days per officer (of ~998), 74,836,000 THB
+   K = 20%  299,344 follow-ups = 74,836 officer-days = 75 days per officer (of ~998), 149,672,000 THB
+   K = 30%  449,016 follow-ups = 112,254 officer-days = 112 days per officer (of ~998), 224,508,000 THB
+   K = 40%  598,688 follow-ups = 149,672 officer-days = 150 days per officer (of ~998), 299,344,000 THB
+   XGB__F_SP R3_EL: save-rate theta at which the marginal follow-up pays for itself (2022): K10 0.4%  K20 1.0%  K30 2.1%
+   LR__F_SP R2_EXP: save-rate theta at which the marginal follow-up pays for itself (2022): K10 0.4%  K20 1.1%  K30 1.9%
+done. Paste fi_out/fi04_log.txt into the chat.

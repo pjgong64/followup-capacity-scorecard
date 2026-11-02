@@ -1,0 +1,80 @@
+fi_06_scorecard  2026-10-26 21:07:29
+
+================ exante_rolling: build on Year 1, score Year 2 ================
+information value (development rows):
+   Int                  IV 2.2061  5 bins
+   Depb                 IV 0.5307  8 bins
+   nLC                  IV 0.4164  4 bins
+   Area_default_hist    IV 0.3755  8 bins
+   Outb                 IV 0.1885  7 bins
+   CLb                  IV 0.1312  8 bins
+   CD                   IV 0.0572  8 bins
+   IDRV                 IV 0.0412  5 bins
+   eYierai              IV 0.0389  3 bins
+   eCostrai             IV 0.0384  3 bins
+   ePrcton              IV 0.0347  6 bins
+   MP                   IV 0.0338  7 bins
+   Profit_buffer        IV 0.0280  3 bins
+   nP                   IV 0.0264  4 bins
+   MH                   IV 0.0209  6 bins
+   IDDT                 IV 0.0126  10 bins
+   Area                 IV 0.0113  8 bins
+   eCost                IV 0.0095  5 bins
+   AreaR                IV 0.0091  6 bins
+   eInc                 IV 0.0087  4 bins
+   eYie                 IV 0.0086  6 bins
+   nIS                  IV 0.0069  2 bins
+   Land_util            IV 0.0062  3 bins
+   nRV                  IV 0.0004  2 bins
+screened: IV < 0.02 dropped 9; |r| > 0.70 dropped CLb, eYierai, eCostrai, ePrcton, Profit_buffer, MH
+final scorecard: 9 characteristics: Int, Depb, nLC, Area_default_hist, Outb, CD, IDRV, MP, nP
+score range on the scored year: 432 .. 701 (median 614)
+AUC on Year 2: scorecard 0.8795 | ex-ante LR 0.8865 | ex-ante XGB 0.8933  (binning costs 0.0070, LR vs XGB 0.0068)
+AUC on development rows: scorecard 0.8983
+PD: development prior 0.0435, EM prior on the scored year 0.0855 (realised 0.0705, check only)
+
+================ exante_main: build on Year 1+2, score Year 3 ================
+information value (development rows):
+   Int                  IV 1.9817  5 bins
+   Previous_Default     IV 1.0186  3 bins
+   Depb                 IV 0.5988  8 bins
+   Area_default_hist    IV 0.3523  8 bins
+   nLC                  IV 0.2799  4 bins
+   Outb                 IV 0.1280  7 bins
+   CLb                  IV 0.1048  8 bins
+   eCostrai             IV 0.1025  5 bins
+   ePrcton              IV 0.0972  5 bins
+   Profit_buffer        IV 0.0776  4 bins
+   Has_Credit_History   IV 0.0643  2 bins
+   CD                   IV 0.0586  8 bins
+   IDRV                 IV 0.0531  5 bins
+   eYierai              IV 0.0471  3 bins
+   nP                   IV 0.0340  4 bins
+   MH                   IV 0.0290  6 bins
+   MP                   IV 0.0236  6 bins
+   eInc                 IV 0.0217  6 bins
+   Area                 IV 0.0212  8 bins
+   nRV                  IV 0.0161  2 bins
+   eCost                IV 0.0155  5 bins
+   AreaR                IV 0.0155  7 bins
+   eYie                 IV 0.0147  5 bins
+   IDDT                 IV 0.0085  10 bins
+   Land_util            IV 0.0048  3 bins
+   nIS                  IV 0.0031  2 bins
+screened: IV < 0.02 dropped 7; |r| > 0.70 dropped CLb, ePrcton, IDRV, eYierai, Profit_buffer, Has_Credit_History, Area
+   dropped MH (coefficient -0.058 against its own WOE), refitting
+final scorecard: 11 characteristics: Int, Previous_Default, Depb, Area_default_hist, nLC, Outb, eCostrai, CD, nP, MP, eInc
+score range on the scored year: 373 .. 684 (median 603)
+AUC on Year 3: scorecard 0.8788 | ex-ante LR 0.8885 | ex-ante XGB 0.8970  (binning costs 0.0097, LR vs XGB 0.0085)
+AUC on development rows: scorecard 0.9005
+PD: development prior 0.0570, EM prior on the scored year 0.1110 (realised 0.1206, check only)
+
+reason code 1 among the 19% lowest scores (284,376 borrowers):
+    40.2%  Customer grade (contract rate)
+    38.9%  Deposits at start of year (THB)
+    18.9%  Previous-year repayment status
+     2.1%  Sub-district default history (earlier years)
+share whose first reason is something the borrower cannot change (area history, document type, variety, calendar): 2.1%
+saved scores and first reasons for all 4,490,163 borrower-years (fi06_all_scores_main.rds)
+
+done. Paste fi_out/fi06_log.txt and fi_out/fi06_scorecard_main.md into the chat.
