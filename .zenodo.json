@@ -1,0 +1,15 @@
+{
+  "title": "Whom to visit when officers are few: analysis code",
+  "upload_type": "software",
+  "description": "Analysis code for a study of credit follow-up under a fixed field-staff capacity on 1,496,721 Thai rice-cultivating borrowers (2020-2022, 2022 withheld): ranking rules, mixed small-loan policy, points scorecard, price of transparency, PSI/CSI monitoring and scorecard deployment. Borrower records are restricted and not included; a synthetic panel generator is provided.",
+  "creators": [
+    {"name": "Jungsatidkul, Phataraphol", "affiliation": "University of the Thai Chamber of Commerce; Bank for Agriculture and Agricultural Cooperatives"},
+    {"name": "Innet, Supachate", "affiliation": "University of the Thai Chamber of Commerce"}
+  ],
+  "license": "MIT",
+  "keywords": ["credit scoring", "agricultural finance", "capacity constraint", "scorecard", "population stability index"],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.22842038", "relation": "isSupplementedBy", "scheme": "doi"},
+    {"identifier": "10.3390/forecast8060100", "relation": "references", "scheme": "doi"}
+  ]
+}
