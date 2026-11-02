@@ -1,0 +1,9 @@
+work/
+*.rds
+1_data_before_out.txt
+3_fin3y20_22.txt
+data_hybrid2_prec_sai.txt
+factorial7_out/
+fi_out/
+.Rhistory
+.RData
