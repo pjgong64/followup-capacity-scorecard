@@ -1,5 +1,5 @@
 # Whom to visit when officers are few — analysis code
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23888415.svg)](https://doi.org/10.5281/zenodo.23888415)
 Analysis code for a study of credit follow-up under a fixed field-staff capacity, on a nationwide panel of
 1,496,721 Thai rice-cultivating borrowers of the Bank for Agriculture and Agricultural Cooperatives (BAAC),
 4,490,163 borrower-years (2020–2022), with the 2022 season withheld from every fitted or selected quantity.
