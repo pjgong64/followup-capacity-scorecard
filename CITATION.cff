@@ -9,6 +9,7 @@ authors:
     given-names: Supachate
     affiliation: "University of the Thai Chamber of Commerce"
 version: 1.0.0
+doi: 10.5281/zenodo.23888415
 date-released: 2026-11-02
 license: MIT
 repository-code: "https://github.com/pjgong64/followup-capacity-scorecard"
